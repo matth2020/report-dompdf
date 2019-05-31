@@ -13,3 +13,7 @@
 
 Route::get('/reports','HomeController@index');
 Route::get('/','HomeController@reports');
+
+Route::get('/pdfView/{patient_id}/{prescription_id}','HomeController@pdfView');
+Route::get('/parseJson','HomeController@parseJson');
+Route::post('/parseJsonPost','HomeController@parseJsonPost');
